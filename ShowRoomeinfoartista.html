@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ShowRoome</title>
+    <link rel="force-svg" href="http://berjon.com/blog/2009/07/force-svg.html">
+    <script type="application/javascript">(function()
+{
+  function ForceSVGInHTML()
+  {
+    window.removeEventListener("load", ForceSVGInHTML, true);
+    var svgs = document.getElementsByTagName("svg");
+    for (var i = 0; i < svgs.length; i++) {
+      var svg = svgs[i];
+      var div = document.createElement("div");
+      div.appendChild(svg.cloneNode(true));
+      var dom = (new DOMParser()).parseFromString(div.innerHTML, "application/xml");
+      svg.parentNode.replaceChild(document.importNode(dom.documentElement, true), svg);
+    }
+  }
+  window.addEventListener("load", ForceSVGInHTML, true);
+})();</script>
+  </head>
+  <body style="                                    height: 512px; background-color: white;"><img
+
+      src="https://image.flaticon.com/icons/png/512/26/26362.png" alt="" style="width: 93px; height: 73px; margin-left: -2px;"><br>
+    <h1 style="margin-top: -45.5667px; margin-left: 115px;"> ShowRoome </h1>
+   
+    <h1 style="margin-top:-10px; margin-left: 1150px;"> </h1>
+  <a href="C:\Users\gianm\Desktop\Html\Homepage.html">    <h1 style="margin-top:-10px;margin-left:3px;"> <button name="Homepage" style="height: 35px; width: 95px; margin-top: -48px; margin-left: 15px; background-color: #4d4d4d; ">Homepage</button> </a>
+   <a href="C:\Users\gianm\Desktop\Html\Map.html">      <button name="Map" style="height: 35px; width: 95px; margin-top: -48px; margin-left: 140px; background-color: #4d4d4d;">Map</button></a>
+      <button name="Chart" style="height: 35px; width: 95px; margin-top: -48px; margin-left: 160px;background-color: #4D4D4D;">Chart</button>
+      <button name="Profile" style="height: 35px ; width: 95px; margin-top: -48px; margin-left: 210px;background-color: #4D4D4D; color: white;">Profile</button>
+      <button name="Setting" style="height: 35px ; width: 95px; margin-top: -48px; margin-left: 210px;background-color: #4D4D4D;">Setting</button>
+    </h1>
+    <h1 style="margin-top: -62px;margin-left:px ;background-color: white;">
+      <style>
+#rectangle {
+    width: 1250px;
+    height: 50px;
+    background: #10030F;
+}
+</style> <div id="rectangle"></div>
+    </h1>
+    <h1 style="margin-top: -115px; margin-left: 1100px;"> <input value="Devida" size="65" maxlength="40" ;style="background-color:" #10030f="" type="submit"> </h1> 
+    <a href="C:\Users\gianm\Desktop\Html\Login.html">   <h1 style="margin-left: 1190px;margin-top: -57px;" > <input value="logout" size="65" maxlength="40" ;style="background-color:" #10030f="" type="submit"> </h1> </a>
+    <h1 style="margin-top: -159px; margin-left: 1170px;"> </h1>
+    <!-- Primo artista  -->
+    <p style="margin-top: 380px; margin-left: 5px;"> <img src="https://www.focusjunior.it/content/uploads/2018/10/Michelangelo-Buonarroti.jpg"
+
+        <="" h1="" style="width: 235px; height: 155px; margin-left: -4px; margin-top: -357px;">
+    </p>
+      <input name="Nome"disabled="disabled" form="Giancarlo" value="Devida" "type="text style="margin-top:="" 100px;="" margin-left:="" 200px;="">                                                                                                                                                   </p>                                                                                                                                             
+  </body>
+</html>
